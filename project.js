@@ -8,6 +8,30 @@ $(document).ready(function(){
   let game = document.getElementsByTagName('audio')[4];
   let boopboop = document.getElementsByTagName('audio')[5];
   let distbass = document.getElementsByTagName('audio')[6];
+  let  = document.getElementsByTagName('audio')[7];
+  let  = document.getElementsByTagName('audio')[8];
+  let  = document.getElementsByTagName('audio')[9];
+  let  = document.getElementsByTagName('audio')[10];
+  let  = document.getElementsByTagName('audio')[11];
+  let  = document.getElementsByTagName('audio')[12];
+  let  = document.getElementsByTagName('audio')[13];
+  let  = document.getElementsByTagName('audio')[14];
+  let  = document.getElementsByTagName('audio')[15];
+  let  = document.getElementsByTagName('audio')[16];
+  let  = document.getElementsByTagName('audio')[17];
+  let  = document.getElementsByTagName('audio')[18];
+  let  = document.getElementsByTagName('audio')[19];
+  let  = document.getElementsByTagName('audio')[20];
+  let  = document.getElementsByTagName('audio')[21];
+  let  = document.getElementsByTagName('audio')[22];
+  let  = document.getElementsByTagName('audio')[23];
+  let  = document.getElementsByTagName('audio')[24];
+  let  = document.getElementsByTagName('audio')[25];
+  let  = document.getElementsByTagName('audio')[26];
+  let  = document.getElementsByTagName('audio')[27];
+  let  = document.getElementsByTagName('audio')[28];
+  let  = document.getElementsByTagName('audio')[29];
+  let  = document.getElementsByTagName('audio')[30];
 
 ///switch
 
@@ -79,29 +103,72 @@ $(document).keydown(function (e){
 });
 
 
-$(document).keydown(function (e) {
-  if (e.which === 81) {
-    pingQ();
-  }
-  else if(e.which === 87){
-    pingW();
-  }
-  else if(e.which === 69){
-    pingE();
-  }
-  else if(e.which === 82){
-    pingR();
-  }
-  else if(e.which === 84){
-    pingT();
-  }
-  else if(e.which === 89){
-    pingY();
-  }
-  else if(e.which === 85){
-    pingU();
-  }
-})
+$('button').click(function () {
+    switch ($(this).attr('id')) {
+      case 'q': laser.play(); //q
+      break;
+      case 'w': neutron.play(); //w
+      break;
+      case 'e': neutron.play(); //e
+      break;
+      case 'r': neutron.play(); //r
+      break;
+      case 't': neutron.play(); //t
+      break;
+      case 'y': neutron.play(); //y
+      break;
+      case 'u': neutron.play(); //u
+      break;
+      case 'i': neutron.play(); //i
+      break;
+      case 'o': neutron.play(); //o
+      break;
+      case 'p': neutron.play(); //p
+      break;
+      case 'a': neutron.play(); //a
+      break;
+      case 's': neutron.play(); //s
+      break;
+      case 'd': neutron.play(); //d
+      break;
+      case 'f': neutron.play(); //f
+      break;
+      case 'g': neutron.play(); //g
+      break;
+      case 'h': neutron.play(); //h
+      break;
+      case 'j': neutron.play(); //j
+      break;
+      case 'k': neutron.play(); //k
+      break;
+      case 'l': neutron.play(); //l
+      break;
+      case ';': neutron.play(); //;
+      break;
+      case 'z': neutron.play(); //z
+      break;
+      case 'x': neutron.play(); //x
+      break;
+      case 'c': neutron.play(); //c
+      break;
+      case 'v': neutron.play(); //v
+      break;
+      case 'b': neutron.play(); //b
+      break;
+      case 'n': neutron.play(); //n
+      break;
+      case 'm': neutron.play(); //m
+      break;
+      case ',': neutron.play(); //,
+      break;
+      case '.': neutron.play(); //.
+      break;
+      case '/': neutron.play(); // /
+      break;
+    }
+});
+
+
   // var pingQ = function(){
   //   laser.play();
   // };
