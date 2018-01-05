@@ -1,0 +1,21 @@
+.container {
+  border: 1px solid black;
+}
+
+
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  body {
+    font-size: 1.75em; /* currently ems cause chrome bug misinterpreting rems on body element */
+    line-height: 1.6;
+    font-weight: 400;
+       }
+}
+
+
+/*.button-responsive{
+  max-width: 25%;
+  padding: .2em .2em;
+  position:relative;
+}*/
