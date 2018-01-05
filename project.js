@@ -37,6 +37,7 @@ $(document).ready(function(){
   neutron.load();
   var source = "";
 
+//creats and deletes a new element to allow you to play a sound again before it has finished playing.
   var playSound = function(){
     var click= document.createElement("audio");
     click.src = "sounds/" + source;
@@ -45,69 +46,99 @@ $(document).ready(function(){
     }, false);
     click.play();
   };
+
 //switch for keypress
   $(document).keydown(function (e){
     switch(e.which){
-      case 81: laser.play(); //q
+      case 81: source = "laser.wav";
+               playSound(); //q
       break;
-      case 87: neutron.play(); //w
+      case 87: source = "neutron.wav";
+               playSound(); //w
       break;
-      case 69: source = "neutron.wav";
+      case 69: source = "combteeth.mp3";
                playSound(); //e
       break;
-      case 82: neutron.play(); //r
+      case 82: source = "arcade.mp3";
+               playSound(); //r
       break;
-      case 84: neutron.play(); //t
+      case 84: source = "scifi.mp3";
+               playSound(); //t
       break;
-      case 89: neutron.play(); //y
+      case 89: source = "meow.mp3";
+               playSound(); //y
       break;
-      case 85: neutron.play(); //u
+      case 85: source = "spray.mp3";
+               playSound(); //u
       break;
-      case 73: neutron.play(); //i
+      case 73: source = "drum.mp3";
+               playSound(); //i
       break;
-      case 79: neutron.play(); //o
+      case 79: source = "wood.mp3";
+               playSound(); //o
       break;
-      case 80: neutron.play(); //p
+      case 80: source = "doorbell.mp3";
+               playSound(); //p
       break;
-      case 65: neutron.play(); //a
+      case 65: source = "recorder.mp3";
+               playSound(); //a
       break;
-      case 83: neutron.play(); //s
+      case 83: source = "fret.mp3";
+               playSound(); //s
       break;
-      case 68: neutron.play(); //d
+      case 68: source = "vibrate.mp3";
+               playSound(); //d
       break;
-      case 70: neutron.play(); //f
+      case 70: source = "handbrake.mp3";
+               playSound(); //f
       break;
-      case 71: neutron.play(); //g
+      case 71: source = "airhorn.mp3";
+               playSound(); //g
       break;
-      case 72: neutron.play(); //h
+      case 72: source = "whistle.mp3";
+               playSound(); //h
       break;
-      case 74: neutron.play(); //j
+      case 74: source = "coinslot.mp3";
+               playSound(); //j
       break;
-      case 75: neutron.play(); //k
+      case 75: source = "woosh.mp3";
+               playSound(); //k
       break;
-      case 76: neutron.play(); //l
+      case 76: source = "descend.mp3";
+               playSound(); //l
       break;
-      case 186: neutron.play(); //;
+      case 186: source = "elephant.mp3";
+               playSound(); //;
       break;
-      case 90: neutron.play(); //z
+      case 90: source = "trill.mp3";
+               playSound(); //z
       break;
-      case 88: neutron.play(); //x
+      case 88: source = "yawn.mp3";
+               playSound(); //x
       break;
-      case 67: neutron.play(); //c
+      case 67: source = "burp.mp3";
+               playSound(); //c
       break;
-      case 86: neutron.play(); //v
+      case 86: source = "distbass.wav";
+               playSound(); //v
       break;
-      case 66: neutron.play(); //b
+      case 66: source = "buffalo.mp3";
+               playSound(); //b
       break;
-      case 78: neutron.play(); //n
+      case 78: source = "boopboop.wav";
+               playSound(); //n
       break;
-      case 77: neutron.play(); //m
+      case 77: source = "moo.mp3";
+               playSound(); //m
       break;
-      case 188: neutron.play(); //,
+      case 188: source = "bomb.wav";
+               playSound(); //,
       break;
-      case 190: neutron.play(); //.
+      case 190: source = "game.wav";
+               playSound(); //.
       break;
-      case 191: neutron.play(); // /
+      case 191: source = "piano.wav";
+               playSound(); // /
       break;
     }
   });
@@ -115,65 +146,95 @@ $(document).ready(function(){
   //switch for button click
   $('button').click(function () {
     switch ($(this).attr('id')) {
-      case 'q': laser.play(); //q
+      case 'q': source = "laser.wav";
+               playSound(); //q
       break;
-      case 'w': neutron.play(); //w
+      case 'w': source = "neutron.wav";
+               playSound(); //w
       break;
-      case 'e': neutron.play(); //e
+      case 'e': source = "combteeth.mp3";
+               playSound(); //e
       break;
-      case 'r': neutron.play(); //r
+      case 'r': source = "arcade.mp3";
+               playSound(); //r
       break;
-      case 't': neutron.play(); //t
+      case 't': source = "scifi.mp3";
+               playSound(); //t
       break;
-      case 'y': neutron.play(); //y
+      case 'y': source = "meow.mp3";
+               playSound(); //y
       break;
-      case 'u': neutron.play(); //u
+      case 'u': source = "spray.mp3";
+               playSound(); //u
       break;
-      case 'i': neutron.play(); //i
+      case 'i': source = "drum.mp3";
+               playSound(); //i
       break;
-      case 'o': neutron.play(); //o
+      case 'o': source = "wood.mp3";
+               playSound(); //o
       break;
-      case 'p': neutron.play(); //p
+      case 'p': source = "doorbell.mp3";
+               playSound(); //p
       break;
-      case 'a': neutron.play(); //a
+      case 'a': source = "recorder.mp3";
+               playSound(); //a
       break;
-      case 's': neutron.play(); //s
+      case 's': source = "fret.mp3";
+               playSound(); //s
       break;
-      case 'd': neutron.play(); //d
+      case 'd': source = "vibrate.mp3";
+               playSound(); //d
       break;
-      case 'f': neutron.play(); //f
+      case 'f': source = "handbrake.mp3";
+               playSound(); //f
       break;
-      case 'g': neutron.play(); //g
+      case 'g': source = "airhorn.mp3";
+               playSound(); //g
       break;
-      case 'h': neutron.play(); //h
+      case 'h': source = "whistle.mp3";
+               playSound(); //h
       break;
-      case 'j': neutron.play(); //j
+      case 'j': source = "coinslot.mp3";
+               playSound(); //j
       break;
-      case 'k': neutron.play(); //k
+      case 'k': source = "woosh.mp3";
+               playSound(); //k
       break;
-      case 'l': neutron.play(); //l
+      case 'l': source = "descend.mp3";
+               playSound(); //l
       break;
-      case ';': neutron.play(); //;
+      case ';': source = "elephant.mp3";
+               playSound(); //;
       break;
-      case 'z': neutron.play(); //z
+      case 'z': source = "trill.mp3";
+               playSound(); //z
       break;
-      case 'x': neutron.play(); //x
+      case 'x': source = "yawn.mp3";
+               playSound(); //x
       break;
-      case 'c': neutron.play(); //c
+      case 'c': source = "burp.mp3";
+               playSound(); //c
       break;
-      case 'v': neutron.play(); //v
+      case 'v': source = "distbass.wav";
+               playSound(); //v
       break;
-      case 'b': neutron.play(); //b
+      case 'b': source = "buffalo.mp3";
+               playSound(); //b
       break;
-      case 'n': neutron.play(); //n
+      case 'n': source = "boopboop.wav";
+               playSound(); //n
       break;
-      case 'm': neutron.play(); //m
+      case 'm': source = "moo.mp3";
+               playSound(); //m
       break;
-      case ',': neutron.play(); //,
+      case ',': source = "bomb.wav";
+               playSound(); //,
       break;
-      case '.': neutron.play(); //.
+      case '.': source = "game.wav";
+               playSound(); //.
       break;
-      case '/': neutron.play(); // /
+      case '/': source = "piano.wav";
+               playSound(); // /
       break;
     }
   });
