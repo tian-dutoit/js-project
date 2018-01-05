@@ -1,41 +1,8 @@
 $(document).ready(function(){
 
 
-  let laser = document.getElementsByTagName('audio')[0];
-  let neutron = document.getElementsByTagName('audio')[1];
-  let piano = document.getElementsByTagName('audio')[2];
-  let bomb = document.getElementsByTagName('audio')[3];
-  let game = document.getElementsByTagName('audio')[4];
-  let boopboop = document.getElementsByTagName('audio')[5];
-  let distbass = document.getElementsByTagName('audio')[6];
-  let  = document.getElementsByTagName('audio')[7];
-  let  = document.getElementsByTagName('audio')[8];
-  let  = document.getElementsByTagName('audio')[9];
-  let  = document.getElementsByTagName('audio')[10];
-  let  = document.getElementsByTagName('audio')[11];
-  let  = document.getElementsByTagName('audio')[12];
-  let  = document.getElementsByTagName('audio')[13];
-  let  = document.getElementsByTagName('audio')[14];
-  let  = document.getElementsByTagName('audio')[15];
-  let  = document.getElementsByTagName('audio')[16];
-  let  = document.getElementsByTagName('audio')[17];
-  let  = document.getElementsByTagName('audio')[18];
-  let  = document.getElementsByTagName('audio')[19];
-  let  = document.getElementsByTagName('audio')[20];
-  let  = document.getElementsByTagName('audio')[21];
-  let  = document.getElementsByTagName('audio')[22];
-  let  = document.getElementsByTagName('audio')[23];
-  let  = document.getElementsByTagName('audio')[24];
-  let  = document.getElementsByTagName('audio')[25];
-  let  = document.getElementsByTagName('audio')[26];
-  let  = document.getElementsByTagName('audio')[27];
-  let  = document.getElementsByTagName('audio')[28];
-  let  = document.getElementsByTagName('audio')[29];
-  let  = document.getElementsByTagName('audio')[30];
 
-  neutron.preload = 'auto';
-  neutron.load();
-  var source = "";
+
 
 //creats and deletes a new element to allow you to play a sound again before it has finished playing.
   var playSound = function(){
