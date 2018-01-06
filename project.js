@@ -2,6 +2,16 @@ $(document).ready(function(){
 
 
 
+  //background color changes on keypress or click
+  var hsltext = "";
+  var count = 130;
+  var counter = function(){
+    count ++;
+    hsltext = "hsl("+count+", 60%, 70%)";
+    document.body.style.background = hsltext;
+  };
+  $(document).click(counter);
+  $(document).keydown(counter);
 
 
 //creats and deletes a new element to allow you to play a sound again before it has finished playing.
