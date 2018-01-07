@@ -1,19 +1,25 @@
 body {
   text-align: center;
-  background-color:hsl(130,60%,70%);
+  background-color:hsl(160,60%,70%);
 }
 
 .container {
-  border: 1px solid black;
+  position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
 
 button {
   border: 1px solid black;
+  margin: 3px;
 }
 
 #footer{
-  margin-top: 1em;
+  margin-top: 1.5em;
   padding: auto;
+  bottom: 10px;
 }
 
 /* Larger than tablet */

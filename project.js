@@ -1,10 +1,8 @@
 $(document).ready(function(){
 
-
-
-  //background color changes on keypress or click
+//background color changes on keypress or click
   var hsltext = "";
-  var count = 130;
+  var count = 160;
   var counter = function(){
     count ++;
     hsltext = "hsl("+count+", 60%, 70%)";
@@ -18,9 +16,6 @@ $(document).ready(function(){
   var playSound = function(){
     var click= document.createElement("audio");
     click.src = "sounds/" + source;
-    click.addEventListener("ended", function () {
-      document.removeChild(this);
-    }, false);
     click.play();
   };
 
