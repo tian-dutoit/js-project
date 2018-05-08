@@ -12,7 +12,7 @@ $(document).ready(function(){
   $(document).keydown(counter);
 
 
-//creats and deletes a new element to allow you to play a sound again before it has finished playing.
+//creates and deletes a new element to allow you to play a sound again before it has finished playing.
   var playSound = function(){
     var click= document.createElement("audio");
     click.src = "sounds/" + source;
